@@ -1,0 +1,159 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+.poster{
+    height: 450px;
+    width: 100%;
+}
+.poster > img{
+    align-items: right;
+    border-radius: 90%;
+    box-sizing: content-box;
+}
+.poster > h1{
+    text-align: right;
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: #0c0202;
+
+}
+
+p{
+    display: inline;
+    font-family: cursive;
+    text-align: center;
+}
+/* Nav bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Responsive menu toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+.card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    height: 350px;
+}
+
+.card-image {
+    width: 30%; /* Fixed width for image */
+    height: 60%; /* Full height */
+    aspect-ratio: 16/9;
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.card-content {
+    padding: 16px;
+    flex: 1;
+}
+
+.card-title {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+}
+
+.card-text {
+    margin: 0 0 16px 0;
+    color: #0c0202;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}strong{
+    color: black;
+}
+summary:hover{
+    color: royalblue;
+
+}
