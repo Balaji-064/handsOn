@@ -1,0 +1,32 @@
+/*Write a program that reads an array of ints and outputs the length of the
+longest sequence in strictly ascending order. Print the elements of longest
+ascending sequence in an array Elements of the sequence must go one after
+another. A single number is assumed to be an ordered sequence with the length= 1.*/
+
+const arr: number[] = [50, 52, 45, 51, 59];
+let maxLength = 1;
+let currentLength = 1;
+let startIndex = 0;
+let maxStartIndex = 0;
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > arr[i - 1]) {
+        currentLength++;
+    } 
+    else {
+        if (currentLength > maxLength) {
+            maxLength = currentLength;
+            maxStartIndex = startIndex;
+        }
+        currentLength = 1;
+        startIndex = i;
+
+        
+    }
+}
+if (currentLength > maxLength) {
+    maxLength = currentLength;
+    maxStartIndex = startIndex;
+}
+const longestSequence = arr.slice(maxStartIndex, maxStartIndex + maxLength);
+console.log(`Length of the longest ascending sequence: ${maxLength}`);
+console.log("Elements of the longest ascending sequence:", longestSequence);
