@@ -1,0 +1,28 @@
+function fibba(a: number[]):boolean {
+    var x: number = 0;
+    var y: number = 1;
+    let flag = true;
+    var c;
+    console.log(x, y)
+    if (a[0] == x) {
+        flag = true;
+    } else if (a[1] == y) {
+        flag = true;
+    }
+    for (var i = 2; i < a.length; i++) {
+        c = x + y;
+        x = y;
+        y = c;
+
+        if (a[i] != c) {
+            flag = false;
+        }
+        
+        console.log(c);
+
+    }
+    return flag;
+   
+}
+
+console.log(fibba([0, 1, 1, 2,3]));
