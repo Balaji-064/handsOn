@@ -1,0 +1,29 @@
+function largestNumber(arr: string[]): string {
+    
+    const compare = (x: string, y: string): number => {
+       
+        if (x + y > y + x) {
+            return -1;
+        } else {
+            return 1; 
+        }
+    };
+
+    
+    arr.sort(compare);
+
+    
+    const largestNum = arr.join('');
+
+    
+    if (largestNum[0] === '0') {
+        return '0';
+    }
+
+    return largestNum;
+}
+
+
+const arr = ["3", "30", "34", "5", "9"];
+const result = largestNumber(arr);
+console.log(result);  
