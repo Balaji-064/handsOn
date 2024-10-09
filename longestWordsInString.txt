@@ -1,0 +1,13 @@
+var a="In this syntax, if you don’t pass arguments or pass the undefined into the function when calling it, the function will take the default initialized values for the omitted parameters. For example:"
+var b=a.split(" ");
+var max=0;
+var maxString=""
+for(var i=0;i<b.length;i++){
+    
+  if  (b[i].length>max){
+    max=b[i].length
+    maxString=b[i]
+  }
+    
+}
+console.log(maxString);
