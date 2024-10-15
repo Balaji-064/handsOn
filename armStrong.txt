@@ -1,0 +1,19 @@
+var num =153;
+var InputNumber=num
+var result = 0
+var remainder
+while (InputNumber != 0) {
+    // remainder = InputNumber % 10
+    result += Math.pow(InputNumber % 10,3)
+    InputNumber = InputNumber / 10 | 0;
+    // console.log(InputNumber)
+   
+}
+
+
+if (num== result) {
+    console.log("ArmStrong Number")
+}
+else {
+    console.log("not a armstrong number")
+}

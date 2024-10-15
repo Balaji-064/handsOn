@@ -1,0 +1,12 @@
+var firstString = "Listen";
+var secondString = "SILEnt";
+var firstStringArray= firstString.toLowerCase().split('');
+var secondStringArray= secondString.toLowerCase().split('');
+var firstjoinedArray = firstStringArray.sort().join('');
+var secondjoinedArray = secondStringArray.sort().join('');
+if (firstjoinedArray == secondjoinedArray) {
+    console.log("Anagram");
+}
+else {
+    console.log("Not a Anagram");
+}
