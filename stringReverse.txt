@@ -1,0 +1,10 @@
+//Write a function that takes a string and returns it reversed.
+
+var userInput = require('prompt-sync')();
+var givenstring = userInput("Enter the number")
+function stringReverse(num: string) {
+    var reversestring = num.split('').reverse().join('');
+    console.log(reversestring);
+    
+}
+stringReverse(givenstring) 

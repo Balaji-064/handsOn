@@ -1,0 +1,12 @@
+var userInput = require('prompt-sync')();
+var num: number[] = userInput("Enter the number").split(' ').map(Number)
+function sumOfArray(num: number[]) {
+    var sum=0;
+    
+    for (var i = 0; i < num.length; i++) {
+        sum = sum + num[i];
+    } 
+    console.log(sum);
+}
+
+sumOfArray(num);

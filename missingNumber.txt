@@ -1,0 +1,19 @@
+//Write a function that finds the missing number in a given array of integers from 1 to n.
+let userInput=require('prompt-sync')()
+var num:number[]=userInput("Enter the number")
+function missingNumber(){
+    for(var i=1;i<num[num.length-1];i++){
+       if(num.indexOf[i+1]==i+1){
+       
+       }
+       else{
+        console.log(i)
+
+       }
+       
+
+        
+
+    } 
+}
+missingNumber()
