@@ -1,0 +1,17 @@
+var userInput = require('prompt-sync')();
+var age=userInput("enter the age")
+var gender=userInput("enter the gender")
+if( gender=='f'){
+    console.log("urban area");
+}
+else if(gender=='m' && (age>20 && age<=40)){
+    console.log("he may work from anywhere")
+
+}
+else if(gender == 'm' && (age>40 && age<60 )){
+    console.log("work in urban areas")
+
+
+}else{
+    console.log("error")
+}
